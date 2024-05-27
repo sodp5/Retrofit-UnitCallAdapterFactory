@@ -7,6 +7,9 @@ plugins {
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
+
+    withSourcesJar()
+    withJavadocJar()
 }
 
 dependencies {
@@ -26,7 +29,7 @@ publishing {
 
             groupId = "com.github.sodp5"
             artifactId = "retrofit-unit-adapter"
-            version = "1.0.3"
+            version = "1.0.6"
         }
     }
 }
